@@ -81,9 +81,33 @@ What is a regex quantifier?
 
 ### OR Operator
 
+    This regex checks if one of the provided names matches the list of names.
+
+        (Ahmet|John|Sandra)
+            Sam
+            Paul
+            Ahmet (Pass)
+
 ### Character Classes
 
+    \d ("for digit") 
+    \s ("for space")
+    \w ("for word")
+
+    Inverse classes
+
+    \D ("for any except digits")
+    \S ("for any except spaces")
+    \W ("for any except words")
+
+    <!-- dot  -->
+
 ### Flags
+
+    A flag is an optional parameter to a regex that modifies its behavior of searching.
+
+    
+
 
 ### Grouping and Capturing
 
