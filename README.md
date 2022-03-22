@@ -6,7 +6,30 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+<!-- Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary. -->
+Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    ^ asserts position at start of a line
+    () establish a rule set with a set of characters
+    [] is targeting what we need to match
+    a-z to be lowercase character a-z
+    0-9 to be any digit 0-9
+    _ can have _ as character
+    \. can have . as a character
+    - can have - has a character
+    + matches anything within target list between 1 & unlimited
+    @ is literal @ symbol and once typed, it moves on to the next group. In this case, ([([\da-z\.-]+)]) 
+    \d is looking for any number
+    \. in this case means literal . and moves on to the third group
+    {2,6} quantifing specific call for any letter,number, or . in-between 2-6 characters
+    $ end regex
+
+
+     
+    
+
+
+
+
 
 ## Table of Contents
 
@@ -106,7 +129,7 @@ What is a regex quantifier?
 
     A flag is an optional parameter to a regex that modifies its behavior of searching.
 
-    
+
 
 
 ### Grouping and Capturing
