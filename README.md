@@ -159,4 +159,6 @@ Lazy:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! 
+    My name is Austin and I created this cheatsheet on common regular expressions! It's an extremely useful tool to strengthen your knowledge in regex! Check it out at my github:
+    [https://github.com/austinslatey](https://github.com/austinslatey)
