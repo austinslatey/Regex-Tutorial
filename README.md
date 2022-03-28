@@ -152,11 +152,30 @@ Lazy:
     will return the string "[ba]".
 
 ### Boundaries
+A word boundary \b is just like ^ and $. They are all tests.
+
+Example: \bStar\b
+    Will return all words "star" but will not include words like "Starbucks".
 
 ### Back-references
+Are used to match the same text matched by a capturing group. 
+This helps because we can reuse this to ensure two pieces of a string match.
+
+Example: [0-9][-/ ][a-z][-/ ][0-9]
+    If you are trying to verify that a string has a digit 0-9, a separator such as slashes, hyphens, also spaces, a lower case letter, following another separator, then another digit 0-9 you could use this regex.
 
 ### Look-ahead and Look-behind
+Look-ahead: X(?=Y) Which means look for the variable X, but only match if followed by variable Y. 
 
+Example: /\d+(?=!)/
+    "20 puppies costed us 5500!" 
+    The expression would return only 5500 because we are looking for a digit followed by a $ sign
+
+Look-behind: (?<=Y)X This matches X, but only when there's Y before it.
+
+Example: (?<=\$\d+)
+    This will recongnize the U.S. dollar sign usually before a number.
+    "20 puppies costed us 5500!"
 ## Author
 
 Hello! 
