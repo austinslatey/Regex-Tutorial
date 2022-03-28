@@ -1,12 +1,8 @@
 # Regex-tutorial
 
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
+Hello! My name is Austin S. and I'm here to describe a few regex expressions, as well as a summary describing an intermediate regex expression with some constraints.
 
 ## Summary
-
-<!-- Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary. -->
 
 Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ^ asserts position at start of a line
@@ -25,7 +21,6 @@ $ end regex
 ## Table of Contents
 
 - [Regex-tutorial](#regex-tutorial)
-- [Title (replace with your title)](#title-replace-with-your-title)
   - [Summary](#summary)
   - [Table of Contents](#table-of-contents)
   - [Regex Components](#regex-components)
@@ -48,7 +43,11 @@ $ end regex
 
 What is a regex anchor?
 
-    A regex anchor ensures that a matched expression is anchored to a certain position in the string. The start-of-string anchor (^) ensures it’s at the start of the string while the end-of-string anchor ($) ensures it’s at the end. A word boundary (\b) ensures it’s at the start or end of a word while a non-word boundary (\B) ensures that it’s not.
+    An anchor in regex confirms that a matched expression is anchored to a certain position in a string. 
+    The start-of-string anchor (^) confirms it’s at the start of a string
+    While the end-of-string anchor ($) confirms that it’s at the end.
+    A word boundary (\b) confirms whether it’s at the start or end of a word
+    While a non-word boundary (\B) confirms that it’s not.
 
         Start of String Anchor (^)
             /^abc/
@@ -66,14 +65,14 @@ What is a regex anchor?
 
 What is a regex quantifier?
 
-    A regex quantifier specifies the number of consecutive occurrences of the character or expression directly preceding it. Quantifiers can specify zero-or-more (*), one-or-more (+), zero-or-one (?), a specific quantity such as three {3}, more than three {3,}, or between one and three {1,3}. A lazy flag (?) added behind any quantifier will make it match as few characters as possible.
+    A regex quantifier identifies the number of concurrent occurrences of the character or expression immediately preceding it. Quantifiers can particularize zero-or-more (*), one-or-more (+), zero-or-one (?), a specific quantity such as four {4}, more than four {4,}, or between one and four {1,4}. A lazy flag (?) added behind any quantifier will force it match as few characters as possible.
 
          Zero or More (*)
-            The expression a* will match any number of consecutive occurrences of the letter a including no occurrence.
+            a* matches any number of consecutive occurrences of the letter a including no occurrence.
 
 
          One or More (+)
-            The expression a+ will match any number of consecutive occurrences, but will not match if there is no occurrence.
+            a+ allows matching of any number with consecutive occurrences, but does not match if there is no occurrence.
 
          Zero or One (?)
             apples? will match both apple and apples
@@ -86,7 +85,7 @@ What is a regex quantifier?
 
 
         x or More ({x,})
-            a{5,} will match all occurrences of variable a greater than or equal to 5. The test will fail for anything less than 5 occurrences.
+            a{5,} will match all occurrences of variable "a" greater than or equal to 5. The test will fail for anything less than 5 occurrences.
 
 
 
