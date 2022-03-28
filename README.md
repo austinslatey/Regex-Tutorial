@@ -175,7 +175,8 @@ Look-behind: (?<=Y)X This matches X, but only when there's Y before it.
 
 Example: (?<=\$\d+)
     This will recongnize the U.S. dollar sign usually before a number.
-    "20 puppies costed us 5500!"
+    "20 puppies costed us S5500"
+    This expression will return 5000 because its looking for the $ followed by a number.
 ## Author
 
 Hello! 
