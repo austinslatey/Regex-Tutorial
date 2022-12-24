@@ -43,8 +43,10 @@ $ end regex
 
 What is a regex anchor?
 
-    An anchor in regex confirms that a matched expression is anchored to a certain position in a string. 
+    An anchor in regex confirms that a matched expression is anchored to a certain position in a string.
+     
     The start-of-string anchor (^) confirms it’s at the start of a string
+
     While the end-of-string anchor ($) confirms that it’s at the end.
     A word boundary (\b) confirms whether it’s at the start or end of a word
     While a non-word boundary (\B) confirms that it’s not.
